@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://titaniumconcierge.ng/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/services</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/fleet</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/about</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/contact</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Service detail pages -->
+  <url>
+    <loc>https://titaniumconcierge.ng/services/airport-transfer</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/services/in-city-rides</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/services/events-transportation</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fleet detail pages -->
+  <url>
+    <loc>https://titaniumconcierge.ng/fleet/mercedes-s-class</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/fleet/range-rover-vogue</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/fleet/toyota-land-cruiser</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/fleet/lexus-es350</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://titaniumconcierge.ng/fleet/sprinter-bus</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
