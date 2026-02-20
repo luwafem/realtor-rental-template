@@ -1,59 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://titaniumconcierge.ng/</loc>
+    <loc>https://titaniumproperties.ng/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/services</loc>
+    <loc>https://titaniumproperties.ng/services</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/fleet</loc>
+    <loc>https://titaniumproperties.ng/properties</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/about</loc>
+    <loc>https://titaniumproperties.ng/about</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/contact</loc>
+    <loc>https://titaniumproperties.ng/contact</loc>
     <priority>0.7</priority>
   </url>
 
   <!-- Service detail pages -->
   <url>
-    <loc>https://titaniumconcierge.ng/services/airport-transfer</loc>
+    <loc>https://titaniumproperties.ng/services/property-sales</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/services/in-city-rides</loc>
+    <loc>https://titaniumproperties.ng/services/rental-management</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/services/events-transportation</loc>
+    <loc>https://titaniumproperties.ng/services/real-estate-investment</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://titaniumproperties.ng/services/property-development</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://titaniumproperties.ng/services/consultancy</loc>
     <priority>0.8</priority>
   </url>
 
-  <!-- Fleet detail pages -->
+  <!-- Property detail pages -->
   <url>
-    <loc>https://titaniumconcierge.ng/fleet/mercedes-s-class</loc>
+    <loc>https://titaniumproperties.ng/properties/luxury-duplex-ikoyi</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/fleet/range-rover-vogue</loc>
+    <loc>https://titaniumproperties.ng/properties/modern-apartment-victoria-island</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/fleet/toyota-land-cruiser</loc>
+    <loc>https://titaniumproperties.ng/properties/commercial-space-ikeja</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/fleet/lexus-es350</loc>
+    <loc>https://titaniumproperties.ng/properties/land-for-development-ajah</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://titaniumconcierge.ng/fleet/sprinter-bus</loc>
+    <loc>https://titaniumproperties.ng/properties/retail-shop-lekki</loc>
     <priority>0.7</priority>
   </url>
 </urlset>

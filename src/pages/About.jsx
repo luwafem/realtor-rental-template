@@ -13,28 +13,28 @@ const About = () => {
   return (
     <div className="bg-[#050505] text-white min-h-screen">
       <Helmet>
-        <title>Our Story | {siteConfig.companyName}</title>
-        <meta name="description" content={`The heritage and mission of ${siteConfig.companyName} — Nigeria's leading luxury chauffeur service.`} />
+        <title>The Heritage | {siteConfig.companyName}</title>
+        <meta name="description" content={`The heritage and mission of ${siteConfig.companyName} — Bespoke advisors for the UK’s most significant real estate.`} />
       </Helmet>
 
       {/* Narrative Header */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp} className="max-w-4xl">
-            <span className="text-[10px] tracking-[0.5em] uppercase text-white/40 mb-6 block">The Heritage</span>
+            <span className="text-[10px] tracking-[0.5em] uppercase text-white/40 mb-6 block font-bold">The Heritage</span>
             <h1 className="text-5xl md:text-8xl font-extralight tracking-tighter leading-[0.9] mb-12">
-              Redefining the <br /> <span className="italic text-white/90">Art of Travel.</span>
+              Defining the <br /> <span className="italic text-white/90">Standard of PCL.</span>
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
               <div className="md:col-span-7">
                 <p className="text-xl md:text-2xl font-light leading-relaxed text-white/70 italic">
-                  {siteConfig.companyName} was founded with a singular, uncompromising vision: to elevate ground transportation in Nigeria into a seamless luxury experience.
+                  {siteConfig.companyName} was established as a private mandate, dedicated to the acquisition, development, and stewardship of the United Kingdom’s most prestigious residential and commercial assets.
                 </p>
               </div>
               <div className="md:col-span-5 flex flex-col gap-6 pt-2">
                  <div className="h-[1px] w-full bg-white/10" />
                  <p className="text-sm font-light text-white/40 leading-relaxed uppercase tracking-widest">
-                   Based in Lagos • Serving the Elite • Established 2026
+                    Mayfair • Kensington • The Cotswolds <br /> Est. 2026 • Private Portfolios
                  </p>
               </div>
             </div>
@@ -42,37 +42,37 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission & Values - Grid Layout */}
+      {/* Mission & Values - Focus on Assets */}
       <section className="py-24 px-6 bg-[#080808]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <motion.div {...fadeInUp} className="space-y-12">
               <div>
-                <h2 className="text-[10px] tracking-[0.4em] uppercase text-white/30 mb-6 font-bold">The Mission</h2>
+                <h2 className="text-[10px] tracking-[0.4em] uppercase text-white/30 mb-6 font-bold">The Mandate</h2>
                 <p className="text-3xl font-extralight tracking-tight leading-snug">
-                  To deliver safe, punctual, and <span className="italic">bespoke</span> transportation that transcends the standard, setting the benchmark for chauffeur services across the continent.
+                  To provide a <span className="italic">discreet</span> gateway to the UK's most exclusive off-market opportunities, ensuring capital preservation through strategic asset selection.
                 </p>
               </div>
               
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <p className="text-4xl font-extralight italic mb-2 tracking-tighter">100%</p>
-                  <p className="text-[9px] uppercase tracking-[0.2em] text-white/30">Vetted Chauffeurs</p>
+                  <p className="text-4xl font-extralight italic mb-2 tracking-tighter">£250M+</p>
+                  <p className="text-[9px] uppercase tracking-[0.2em] text-white/30">Assets Under Stewardship</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-extralight italic mb-2 tracking-tighter">24/7</p>
-                  <p className="text-[9px] uppercase tracking-[0.2em] text-white/30">Concierge Support</p>
+                  <p className="text-4xl font-extralight italic mb-2 tracking-tighter">100%</p>
+                  <p className="text-[9px] uppercase tracking-[0.2em] text-white/30">Private Treaty Success</p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Why Choose Us - Visual Cards */}
+            {/* Why Choose Us - Pillars of Trust */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { title: "Privacy", desc: "Absolute discretion for every itinerary." },
-                { title: "Precision", desc: "Punctuality monitored by real-time logistics." },
-                { title: "Fleet", desc: "The latest models, maintained to perfection." },
-                { title: "Bespoke", desc: "Tailored to your specific requirements." }
+                { title: "Intelligence", desc: "Granular data on London's highest-growth micro-markets." },
+                { title: "Sourcing", desc: "Unrivalled access to Grade I & II listed off-market estates." },
+                { title: "Stewardship", desc: "Precision-led management focused on long-term capital growth." },
+                { title: "Execution", desc: "Seamless navigation of the UK’s complex legal and tax frameworks." }
               ].map((item, i) => (
                 <motion.div 
                   key={i}
@@ -90,16 +90,16 @@ const About = () => {
         </div>
       </section>
 
-      {/* Brand Ethos Statement */}
+      {/* Philosophical Closer */}
       <section className="py-32 px-6">
         <motion.div {...fadeInUp} className="max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl md:text-3xl font-extralight italic mb-8">
-            "Your journey is our craft. We don't just move people; we orchestrate time and comfort."
+          <h3 className="text-2xl md:text-3xl font-extralight italic mb-8 leading-relaxed">
+            "British real estate is not merely a purchase; it is the acquisition of a legacy that transcends generations."
           </h3>
           <div className="w-12 h-[1px] bg-white/20 mx-auto mb-8" />
-          <p className="text-sm text-white/50 font-light leading-relaxed">
-            Our team understands that every journey matters. Whether it's a critical business meeting, 
-            a relaxing airport transfer, or a special event, we ensure you arrive in style and comfort.
+          <p className="text-sm text-white/50 font-light leading-relaxed max-w-xl mx-auto">
+            At {siteConfig.companyName}, we merge institutional-grade market analysis with the personal touch of a private family office. 
+            We represent the global elite who demand architectural significance and financial resilience.
           </p>
         </motion.div>
       </section>

@@ -1,142 +1,122 @@
 export const siteConfig = {
-  companyName: 'Driven by Vivan',
-  tagline: 'Refining the Art of Travel',
-  description: 'Experience luxury and reliability with Driven by Vivan. We offer professional chauffeur services for airport transfers, in-city rides, and special events across Nigeria.',
-  phone: '+234 800 123 4567',
-  whatsappNumber: '2348001234567', 
-  email: 'bookings@DrivenbyVivan.ng',
-  // Using a minimalist typography-based placeholder for the logo
-  logo: 'https://images.unsplash.com/photo-1599305090748-361664af8791?q=80&w=500&auto=format&fit=crop',
+  companyName: 'NAFF Properties',
+  tagline: 'Legacy Assets. London Living.',
+  description: 'A bespoke UK property advisory specializing in the acquisition and management of high-yield residential and commercial assets across London and the Home Counties.',
+  phone: '+44 20 7946 0000',
+  whatsappNumber: '442079460000', 
+  email: 'concierge@naffproperties.co.uk',
+  logo: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=200&auto=format&fit=crop', 
   
   hero: {
-    title: 'Luxury Chauffeur Services in Nigeria',
-    subtitle: 'Travel in comfort and style with our professional drivers',
-    // Dark cinematic interior of a luxury car
-    backgroundImage: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop',
-    ctaText: 'Book Now',
-    ctaLink: '/contact'
+    title: 'The Blueprint of British Luxury.',
+    subtitle: 'Private advisory for the acquisition of significant UK architectural assets.',
+    backgroundImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2070&auto=format&fit=crop', // Moody London Street View (Westminster/Mayfair)
+    ctaText: 'Enter the Catalog',
+    ctaLink: '/properties'
   },
 
   services: [
     {
-      id: 'airport-transfer',
-      title: 'Airport Transfer',
-      shortDesc: 'Reliable and luxurious transportation to and from all major airports.',
-      description: 'Our airport transfer service ensures you arrive on time and in style. We monitor your flight for delays and provide a complimentary wait time.',
-      // High-end terminal/car silhouette
-      image: 'https://unsplash.com/photos/WO2Pfxc-24U/download?force=true&w=2400',
-      price: 'From ₦25,000',
-      features: ['Flight tracking', 'Meet & greet', 'Complimentary water', 'Luggage assistance']
+      id: 'private-acquisition',
+      title: 'Strategic Acquisition',
+      shortDesc: 'Securing Prime Central London real estate with surgical precision.',
+      description: 'We represent global private wealth in the sourcing of off-market Grade II listed residences and modern penthouses across the UK’s most coveted postcodes.',
+      image: 'https://unsplash.com/photos/DwEjabQHKJU/download?force=true&w=2400', 
+      price: 'Bespoke Fees',
+      features: ['Off-Market Sourcing', 'Stamp Duty Optimization', 'Conveyancing Management', 'Anonymity Assured']
     },
     {
-      id: 'in-city-rides',
-      title: 'In-City Rides',
-      shortDesc: 'Effortless travel within the city for business or leisure.',
-      description: 'Whether you need a ride to a meeting, shopping, or dinner, our city service provides seamless transportation with professional chauffeurs.',
-      // City lights reflected on a black car
-      image: 'https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?q=80&w=1974&auto=format&fit=crop',
-      price: 'From ₦15,000/hour',
-      features: ['Hourly bookings', 'Multiple stops', 'Wi-Fi onboard', 'Refreshments']
+      id: 'portfolio-stewardship',
+      title: 'Estate Stewardship',
+      shortDesc: 'End-to-end management for the high-net-worth landlord.',
+      description: 'Our London-based team provides rigorous asset protection, ensuring high-tier occupancy and capital appreciation through strategic refurbishments.',
+      image: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop', 
+      price: 'Competitive Retention',
+      features: ['Corporate Tenant Sourcing', 'Compliance Management', '24/7 Crisis Response', 'Monthly Yield Audits']
     },
     {
-      id: 'events-transportation',
-      title: 'Events Transportation',
-      shortDesc: 'Make a statement at weddings, galas, and corporate events.',
-      description: 'Arrive in elegance. We provide chauffeured vehicles for special occasions, with customised itineraries and dedicated support.',
-      // Focus on the detail of a suit/luxury door handle
-      image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2069&auto=format&fit=crop',
-      price: 'Custom quote',
-      features: ['Red carpet service', 'Champagne upon request', 'Flexible scheduling', 'Dedicated coordinator']
+      id: 'investment-advisory',
+      title: 'Capital Advisory',
+      shortDesc: 'Yield-focused investment strategies in the UK’s growth corridors.',
+      description: 'From Purpose-Built Student Accommodation (PBSA) to Buy-to-Let portfolios in the North, we provide data-driven entry and exit strategies.',
+      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop', 
+      price: 'Portfolio Specific',
+      features: ['Market Cycle Analysis', 'Debt Financing Support', 'Portfolio Rebalancing', 'Tax Efficiency']
     }
   ],
 
-  fleet: [
-    {
-      id: 'mercedes-s-class',
-      name: 'Mercedes-Benz S-Class',
-      capacity: '4 passengers',
-      luggage: '2 suitcases',
-      features: ['Leather seats', 'Climate control', 'Wi-Fi', 'Mineral water'],
-      // Front grill/headlight close-up
-      image: 'https://unsplash.com/photos/DCr2SU1-lA8/download?force=true&w=2400',
-      price: 'From ₦35,000/hour',
-      description: 'Experience ultimate luxury in the flagship Mercedes S-Class. Perfect for executive travel.'
-    },
-    {
-      id: 'range-rover-vogue',
-      name: 'Range Rover Vogue',
-      capacity: '5 passengers',
-      luggage: '3 suitcases',
-      features: ['Panoramic roof', 'Premium sound system', 'Off-road capability', 'Refreshments'],
-      // Profile of a black Range Rover
-      image: 'https://unsplash.com/photos/wrRhFFTySnc/download?force=true&w=2400',
-      price: 'From ₦40,000/hour',
-      description: 'Command the road with the Range Rover Vogue. Spacious, powerful, and elegant.'
-    },
-    {
-      id: 'toyota-land-cruiser',
-      name: 'Toyota Land Cruiser Prado',
-      capacity: '7 passengers',
-      luggage: '4 suitcases',
-      features: ['SUV comfort', 'Dual AC', 'Entertainment system', 'Charging ports'],
-      // Modern SUV in dark lighting
-      image: 'https://unsplash.com/photos/CyEyJjfgd5A/download?force=true&w=2400',
-      price: 'From ₦30,000/hour',
-      description: 'Ideal for group travel and airport transfers. Reliable, spacious, and comfortable.'
-    },
-    {
-      id: 'lexus-es350',
-      name: 'Lexus ES 350',
-      capacity: '4 passengers',
-      luggage: '2 suitcases',
-      features: ['Quiet cabin', 'Heated seats', 'Mark Levinson sound', 'Privacy glass'],
-      // Clean side-shot of a black Lexus
-      image: 'https://unsplash.com/photos/IdkJXb89Km4/download?force=true&w=2400',
-      price: 'From ₦28,000/hour',
-      description: 'Smooth, quiet, and refined – the Lexus ES offers a serene ride.'
-    },
-    {
-      id: 'sprinter-bus',
-      name: 'Mercedes-Benz Sprinter',
-      capacity: '14 passengers',
-      luggage: '8 suitcases',
-      features: ['Captain seats', 'TV/DVD', 'Mini fridge', 'PA system'],
-      // High-roof black sprinter van
-      image: 'https://unsplash.com/photos/X3BMmUhYX8w/download?force=true&w=2400',
-      price: 'From ₦60,000/hour',
-      description: 'Perfect for group events and corporate outings. Luxury on a larger scale.'
-    }
-  ],
-
-  meta: {
-    title: 'Driven by Vivan - Premium Chauffeur Services Nigeria',
-    description: 'Book luxury chauffeur services in Nigeria. Professional drivers, premium vehicles, 24/7 availability.',
-    ogImage: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop',
-    url: 'https://DrivenbyVivan.ng',
-    twitterHandle: '@DrivenbyVivan'
-  },
-  
-  formspreeEndpoint: 'https://formspree.io/f/your-form-id',
-  social: {
-    facebook: 'https://facebook.com/DrivenbyVivan',
-    instagram: 'https://instagram.com/DrivenbyVivan',
-    twitter: 'https://twitter.com/DrivenbyVivan',
-  },
-  
   testimonials: [
     {
       id: 1,
-      name: 'Dr. Adebayo O.',
-      role: 'Business Executive',
-      content: 'Driven by Vivan made my airport transfer flawless. The driver was professional and the car was immaculate. Highly recommended!',
+      name: 'Julian V.',
+      role: 'Portfolio Client',
+      content: 'NAFF Properties navigated the complexities of my Chelsea acquisition with remarkable speed and total discretion.',
       rating: 5
     },
     {
       id: 2,
-      name: 'Mrs. Chioma E.',
-      role: 'Event Planner',
-      content: 'We used them for a corporate gala and all our VIP guests were impressed. Punctual, courteous, and luxurious.',
+      name: 'Sarah T.',
+      role: 'Investment Partner',
+      content: 'Their insights into the Greater London rental market have been instrumental in our 12% YOY growth.',
       rating: 5
     }
   ],
+
+  social: {
+    linkedin: 'https://linkedin.com/company/naffpropertiesuk',
+    instagram: 'https://instagram.com/naffproperties',
+    twitter: 'https://twitter.com/naffpropsuk',
+  },
+
+  properties: [
+    {
+      id: 'knightsbridge-penthouse',
+      name: 'The Pavilion Penthouse',
+      type: 'Luxury Apartment',
+      bedrooms: 4,
+      bathrooms: 4,
+      area: '3,200 sq ft',
+      location: 'Knightsbridge, London SW1',
+      price: '£12,500,000',
+      features: ['Harrods Proximity', 'Private Lift', 'Climate Controlled Wine Cellar', '24hr Porter'],
+      image: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?q=80&w=2071&auto=format&fit=crop', 
+      description: 'A masterclass in contemporary British design. This lateral penthouse features views over Hyde Park and bespoke interiors by world-renowned craftsmen.'
+    },
+    {
+      id: 'cotswolds-estate',
+      name: 'Sterling Manor',
+      type: 'Country Estate',
+      bedrooms: 8,
+      bathrooms: 7,
+      area: '12,000 sq ft',
+      location: 'The Cotswolds, Oxfordshire',
+      price: '£8,250,000',
+      features: ['Helipad', 'Equestrian Facilities', 'Grade II Listed', '15-Acre Grounds'],
+      image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2070&auto=format&fit=crop', 
+      description: 'An expansive 17th-century estate meticulously restored for the 21st century. The ultimate retreat for privacy and rural grandeur.'
+    },
+    {
+      id: 'canary-wharf-office',
+      name: 'The Meridian Hub',
+      type: 'Commercial Asset',
+      bedrooms: 0,
+      bathrooms: 10,
+      area: '15,000 sq ft',
+      location: 'Canary Wharf, London E14',
+      price: '£18,000,000',
+      features: ['Triple-Height Lobby', 'Sky Garden Access', 'BREEAM Excellent', 'High-Speed Backbone'],
+      image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2070&auto=format&fit=crop', 
+      description: 'A premium commercial investment opportunity in the heart of London’s financial district. Fully let to Blue-Chip tenants.'
+    }
+  ],
+
+  formspreeEndpoint: 'https://formspree.io/f/your-form-id',
+
+  meta: {
+    title: 'NAFF Properties | UK Real Estate & Portfolio Management',
+    description: 'Premier UK property advisory specializing in high-value acquisitions and luxury estate management in London and the Cotswolds.',
+    ogImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1200&auto=format&fit=crop',
+    url: 'https://naffproperties.co.uk',
+    twitterHandle: '@naffpropsuk'
+  }
 };

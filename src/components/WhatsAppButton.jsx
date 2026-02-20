@@ -2,7 +2,8 @@ import { motion } from 'framer-motion'
 import { siteConfig } from '../config'
 
 const WhatsAppButton = () => {
-  const message = encodeURIComponent("Hello, I would like to book a chauffeur service.")
+  // Updated message for UK Property Advisory
+  const message = encodeURIComponent("Hello, I would like to enquire about off-market property opportunities.")
   const link = `https://wa.me/${siteConfig.whatsappNumber}?text=${message}`
 
   return (
@@ -12,17 +13,21 @@ const WhatsAppButton = () => {
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
-      whileHover={{ scale: 1.1, backgroundColor: 'rgba(255, 255, 255, 1)', color: '#000' }}
+      whileHover={{ 
+        scale: 1.1, 
+        backgroundColor: 'rgba(255, 255, 255, 1)', 
+        color: '#000' 
+      }}
       className="fixed bottom-8 right-8 w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full shadow-2xl z-50 flex items-center justify-center transition-colors duration-500"
       aria-label="Chat on WhatsApp"
     >
-      {/* Refined, simpler WhatsApp Icon for a cleaner look */}
+      {/* Refined minimalist chat icon - matches the architectural feel of NAFF Properties */}
       <svg 
         className="w-6 h-6" 
         fill="none" 
         stroke="currentColor" 
         viewBox="0 0 24 24" 
-        strokeWidth="1.5"
+        strokeWidth="1.2"
       >
         <path 
           strokeLinecap="round" 
@@ -31,10 +36,10 @@ const WhatsAppButton = () => {
         />
       </svg>
 
-      {/* Optional: Minimalist pulsing notification dot */}
-      <span className="absolute top-0 right-0 flex h-3 w-3">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-20"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-white/40"></span>
+      {/* Discreet notification dot - high-end brands use white/silver rather than green/red */}
+      <span className="absolute top-0 right-0 flex h-2.5 w-2.5">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-40"></span>
+        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white/60"></span>
       </span>
     </motion.a>
   )

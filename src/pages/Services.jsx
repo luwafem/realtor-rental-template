@@ -18,8 +18,8 @@ const Services = () => {
   return (
     <div className="bg-[#050505] min-h-screen">
       <Helmet>
-        <title>Our Services | {siteConfig.companyName}</title>
-        <meta name="description" content="Explore our premium chauffeur services: airport transfers, in-city rides, and event transportation." />
+        <title>Advisory Capabilities | {siteConfig.companyName}</title>
+        <meta name="description" content="Bespoke UK real estate services: Strategic acquisition, portfolio stewardship, and capital advisory for global investors." />
       </Helmet>
 
       {/* Header Section */}
@@ -32,14 +32,18 @@ const Services = () => {
             className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/5 pb-12"
           >
             <div className="max-w-2xl">
-              <span className="text-[10px] tracking-[0.5em] uppercase text-white/40 mb-4 block">
-                Bespoke Travel
+              <span className="text-[10px] tracking-[0.5em] uppercase text-white/40 mb-4 block font-bold">
+                Operational Excellence
               </span>
               <h1 className="text-5xl md:text-7xl font-extralight tracking-tighter text-white leading-none">
-                Our <span className="italic">Services</span>
+                Our <span className="italic">Capabilities</span>
               </h1>
             </div>
-            
+            <div className="hidden md:block">
+              <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 font-bold italic">
+                London &bull; Home Counties &bull; International
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -71,19 +75,19 @@ const Services = () => {
       {/* Final Touch: Minimalist Contact Invitation */}
       <section className="py-24 border-t border-white/5 bg-[#080808]">
         <div className="max-w-3xl mx-auto text-center px-6">
-          <h2 className="text-2xl font-extralight tracking-tight text-white mb-6">
-            Requirement for a custom arrangement?
+          <h2 className="text-2xl font-extralight tracking-tight text-white mb-6 italic">
+            Requirement for a bespoke mandate?
           </h2>
-          <p className="text-white/40 font-light text-sm mb-10 leading-relaxed">
-            For specialized requests including multi-day bookings or international 
-            itineraries, our concierge team is at your disposal.
+          <p className="text-white/40 font-light text-sm mb-10 leading-relaxed max-w-xl mx-auto">
+            For specialized requirements including portfolio rebalancing, off-market commercial 
+            sourcing, or international property searches, our advisory team is at your disposal.
           </p>
           <motion.a 
             href="/contact"
             whileHover={{ scale: 1.05 }}
-            className="inline-block text-[11px] uppercase tracking-[0.3em] text-white border border-white/20 px-10 py-4 rounded-full hover:bg-white hover:text-black transition-all duration-500"
+            className="inline-block text-[11px] uppercase tracking-[0.3em] text-white border border-white/20 px-10 py-4 rounded-full hover:bg-white hover:text-black transition-all duration-500 font-bold"
           >
-            Contact Concierge
+            Enquire with Advisory
           </motion.a>
         </div>
       </section>

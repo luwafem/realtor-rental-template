@@ -7,14 +7,14 @@ const Footer = () => {
   const links = {
     navigation: [
       { name: 'Home', path: '/' },
-      { name: 'Fleet', path: '/fleet' },
-      { name: 'Services', path: '/services' },
-      { name: 'About', path: '/about' },
+      { name: 'Portfolio', path: '/properties' },
+      { name: 'Capabilities', path: '/services' },
+      { name: 'Heritage', path: '/about' },
       { name: 'Contact', path: '/contact' },
     ],
     contact: [
-      { name: 'WhatsApp', detail: 'Chat with us', href: `https://wa.me/${siteConfig.whatsappNumber}` },
-      { name: 'Concierge', detail: siteConfig.phone, href: `tel:${siteConfig.phone}` },
+      { name: 'WhatsApp', detail: 'Private Enquiry', href: `https://wa.me/${siteConfig.whatsappNumber}` },
+      { name: 'Advisory', detail: siteConfig.phone, href: `tel:${siteConfig.phone}` },
       { name: 'Email', detail: siteConfig.email, href: `mailto:${siteConfig.email}` },
     ]
   }
@@ -32,7 +32,7 @@ const Footer = () => {
                 alt={siteConfig.companyName} 
                 className="h-8 w-auto mb-4 brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity" 
               />
-              <p className="text-[10px] tracking-[0.5em] uppercase text-white font-extralight">
+              <p className="text-[10px] tracking-[0.5em] uppercase text-white font-bold">
                 {siteConfig.companyName}
               </p>
             </Link>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* Navigation Column */}
           <div className="md:col-span-2">
-            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Discover</h4>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">The Firm</h4>
             <ul className="space-y-4">
               {links.navigation.map((link) => (
                 <li key={link.path}>
@@ -57,7 +57,7 @@ const Footer = () => {
 
           {/* Contact Column */}
           <div className="md:col-span-3">
-            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Reservations</h4>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Mandates</h4>
             <ul className="space-y-4">
               {links.contact.map((item) => (
                 <li key={item.name} className="flex flex-col">
@@ -70,9 +70,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social & Aesthetic Note */}
+          {/* Social & Geographic Note */}
           <div className="md:col-span-3 md:text-right flex flex-col md:items-end">
-            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Follow</h4>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Network</h4>
             <div className="flex space-x-6">
               {Object.keys(siteConfig.social).map((platform) => (
                 <a 
@@ -83,7 +83,6 @@ const Footer = () => {
                   className="text-white/40 hover:text-white transition-all transform hover:-translate-y-1"
                 >
                   <span className="sr-only">{platform}</span>
-                  {/* Generic minimalist circle icon to represent premium social icons */}
                   <div className="w-5 h-5 rounded-full border border-current flex items-center justify-center p-1">
                     <div className="w-1 h-1 bg-current rounded-full" />
                   </div>
@@ -92,20 +91,25 @@ const Footer = () => {
             </div>
             <div className="mt-12 md:mt-auto">
               <span className="text-[9px] tracking-[0.4em] uppercase text-white/10 italic">
-                Nigeria • Chauffeur Driven
+                London &bull; Home Counties &bull; International
               </span>
             </div>
           </div>
         </div>
 
-        {/* Final Copyright Line */}
+        {/* Final Copyright & Regulatory Line */}
         <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[10px] tracking-[0.2em] uppercase text-white/20 font-light">
-            &copy; {currentYear} {siteConfig.companyName}. All rights reserved.
-          </p>
+          <div className="flex flex-col gap-2">
+            <p className="text-[10px] tracking-[0.2em] uppercase text-white/20 font-light">
+              &copy; {currentYear} {siteConfig.companyName}. All rights reserved.
+            </p>
+            <p className="text-[8px] tracking-[0.1em] text-white/10 uppercase">
+              NAFF Properties is a trading name of NAFF Advisory Ltd. Registered in England & Wales.
+            </p>
+          </div>
           <div className="flex gap-8">
-            <Link to="/privacy" className="text-[9px] uppercase tracking-widest text-white/10 hover:text-white/40 transition-colors">Privacy</Link>
-            <Link to="/terms" className="text-[9px] uppercase tracking-widest text-white/10 hover:text-white/40 transition-colors">Terms</Link>
+            <Link to="/privacy" className="text-[9px] uppercase tracking-widest text-white/10 hover:text-white/40 transition-colors font-bold">Privacy</Link>
+            <Link to="/terms" className="text-[9px] uppercase tracking-widest text-white/10 hover:text-white/40 transition-colors font-bold">Terms</Link>
           </div>
         </div>
       </div>
