@@ -13,24 +13,24 @@ const Properties = () => {
   return (
     <div className="bg-[#050505] text-white min-h-screen">
       <Helmet>
-        <title>The UK Portfolio | {siteConfig.companyName}</title>
-        <meta name="description" content="Explore NAFF Properties' curated selection of Prime Central London residences and significant UK estates." />
+        <title>Properties in Awka | {siteConfig.companyName}</title>
+        <meta name="description" content="Explore our curated selection of residential and commercial properties for sale and rent in Awka and Anambra State." />
       </Helmet>
 
       {/* Gallery Header */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp} className="max-w-4xl">
-            <span className="text-[10px] tracking-[0.5em] uppercase text-white/40 mb-6 block font-bold">Strategic Assets</span>
+            <span className="text-[10px] tracking-[0.5em] uppercase text-white/40 mb-6 block font-bold">Featured Properties</span>
             <h1 className="text-5xl md:text-8xl font-extralight tracking-tighter leading-none mb-10">
-              The UK <br /> <span className="italic text-white/90">Portfolio.</span>
+              The Awka <br /> <span className="italic text-white/90">Portfolio.</span>
             </h1>
             <div className="flex flex-col md:flex-row gap-8 items-start justify-between border-t border-white/5 pt-10">
               <p className="text-white/50 font-light max-w-lg leading-relaxed italic">
-                A definitive collection of Britain’s most coveted addresses from lateral apartments in Mayfair to historic manor houses in the Home Counties.
+                A handpicked selection of premium properties across Awka’s most desirable neighborhoods from modern duplexes in Government Layout to commercial plots along the expressway.
               </p>
               <div className="flex items-center gap-4">
-                <span className="text-[9px] uppercase tracking-widest text-white/20 font-bold">Active Mandates:</span>
+                <span className="text-[9px] uppercase tracking-widest text-white/20 font-bold">Available Listings:</span>
                 <span className="text-2xl font-extralight italic">{siteConfig.properties.length}</span>
               </div>
             </div>
@@ -64,18 +64,18 @@ const Properties = () => {
       {/* Footer-CTA for the Catalog */}
       <section className="py-24 px-6 border-t border-white/5 bg-gradient-to-b from-transparent to-white/[0.02]">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-[10px] uppercase tracking-[0.3em] text-white/30 mb-8 font-bold">Bespoke Requirements?</p>
+          <p className="text-[10px] uppercase tracking-[0.3em] text-white/30 mb-8 font-bold">Looking for something specific?</p>
           <h2 className="text-3xl md:text-4xl font-extralight italic mb-12 text-white/90">
-            Access our Off-Market <br className="hidden md:block" /> Private Treaty Catalog
+            Let us help you find <br className="hidden md:block" /> your perfect property in Awka
           </h2>
           <div className="flex flex-col items-center gap-6">
             <a 
               href={`mailto:${siteConfig.email}`}
               className="text-[10px] uppercase tracking-[0.4em] text-white border-b border-white/20 pb-2 hover:border-white transition-all font-bold"
             >
-              Enquire for Private Briefing
+              Request a Private Viewing
             </a>
-            <p className="text-[9px] text-white/20 tracking-widest uppercase italic">Discretion Assured</p>
+            <p className="text-[9px] text-white/20 tracking-widest uppercase italic">No Obligation Consultation</p>
           </div>
         </div>
       </section>

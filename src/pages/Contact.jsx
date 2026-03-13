@@ -30,16 +30,16 @@ const Contact = () => {
   }
 
   const contactMethods = [
-    { label: 'Private Line', value: siteConfig.phone, href: `tel:${siteConfig.phone}` },
-    { label: 'Correspondence', value: siteConfig.email, href: `mailto:${siteConfig.email}` },
-    { label: 'Direct Access', value: 'WhatsApp Concierge', href: `https://wa.me/${siteConfig.whatsappNumber}` },
+    { label: 'Call Us', value: siteConfig.phone, href: `tel:${siteConfig.phone}` },
+    { label: 'Email', value: siteConfig.email, href: `mailto:${siteConfig.email}` },
+    { label: 'WhatsApp', value: 'Chat with us', href: `https://wa.me/${siteConfig.whatsappNumber}` },
   ]
 
   return (
     <div className="bg-[#050505] text-white min-h-screen">
       <Helmet>
-        <title>Private Briefing | {siteConfig.companyName}</title>
-        <meta name="description" content="Request a private briefing for our exclusive property portfolio. Dedicated real estate advisory in Nigeria." />
+        <title>Contact Us | {siteConfig.companyName}</title>
+        <meta name="description" content="Get in touch with Ezenwa James Real Estate in Awka. Call, WhatsApp, or email us to schedule viewings or inquire about properties." />
       </Helmet>
 
       <section className="pt-32 pb-24 px-6">
@@ -50,9 +50,9 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             className="mb-20 border-b border-white/5 pb-12"
           >
-            <span className="text-[10px] tracking-[0.5em] uppercase text-white/40 mb-4 block font-bold">Inquiries</span>
+            <span className="text-[10px] tracking-[0.5em] uppercase text-white/40 mb-4 block font-bold">Get in Touch</span>
             <h1 className="text-5xl md:text-8xl font-extralight tracking-tighter leading-none">
-              Private <span className="italic text-white/90">Briefing</span>
+              Contact <span className="italic text-white/90">Us</span>
             </h1>
           </motion.div>
 
@@ -65,9 +65,9 @@ const Contact = () => {
               className="lg:col-span-4 space-y-16"
             >
               <div>
-                <h3 className="text-[10px] tracking-[0.3em] uppercase text-white/30 mb-6 font-bold">The Mandate</h3>
+                <h3 className="text-[10px] tracking-[0.3em] uppercase text-white/30 mb-6 font-bold">Let's Connect</h3>
                 <p className="text-lg font-light text-white/60 leading-relaxed italic">
-                  For the acquisition of significant assets or to view our off-market catalog, please submit a formal request.
+                  Whether you're looking for your dream home, a rental property, or expert advice, we're here to help. Reach out today.
                 </p>
               </div>
 
@@ -98,8 +98,8 @@ const Contact = () => {
                     className="h-full flex flex-col items-center justify-center text-center py-20"
                   >
                     <div className="w-12 h-[1px] bg-white/20 mb-10" />
-                    <h2 className="text-2xl font-extralight tracking-[0.3em] uppercase mb-4 text-white italic">Inquiry Noted</h2>
-                    <p className="text-white/40 text-[11px] tracking-widest uppercase font-light">An advisor will contact you within the hour.</p>
+                    <h2 className="text-2xl font-extralight tracking-[0.3em] uppercase mb-4 text-white italic">Message Received</h2>
+                    <p className="text-white/40 text-[11px] tracking-widest uppercase font-light">Thank you for reaching out. We'll get back to you shortly.</p>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-12">
@@ -116,7 +116,7 @@ const Contact = () => {
                         />
                       </div>
                       <div className="relative">
-                        <label className="text-[8px] tracking-[0.4em] text-white/20 uppercase mb-2 block font-bold">Electronic Mail</label>
+                        <label className="text-[8px] tracking-[0.4em] text-white/20 uppercase mb-2 block font-bold">Email</label>
                         <input
                           type="email"
                           name="email"
@@ -129,7 +129,7 @@ const Contact = () => {
                     </div>
                     
                     <div className="relative">
-                      <label className="text-[8px] tracking-[0.4em] text-white/20 uppercase mb-2 block font-bold">Phone (Secure Line)</label>
+                      <label className="text-[8px] tracking-[0.4em] text-white/20 uppercase mb-2 block font-bold">Phone Number</label>
                       <input
                         type="tel"
                         name="phone"
@@ -140,7 +140,7 @@ const Contact = () => {
                     </div>
 
                     <div className="relative">
-                      <label className="text-[8px] tracking-[0.4em] text-white/20 uppercase mb-2 block font-bold">Interest / Requirements</label>
+                      <label className="text-[8px] tracking-[0.4em] text-white/20 uppercase mb-2 block font-bold">Message / Inquiry</label>
                       <textarea
                         name="message"
                         rows="3"
@@ -153,7 +153,7 @@ const Contact = () => {
 
                     {status.error && (
                       <p className="text-red-400 text-[9px] tracking-[0.3em] uppercase italic">
-                        System Interruption: {status.error}
+                        Error: {status.error}
                       </p>
                     )}
 
@@ -164,7 +164,7 @@ const Contact = () => {
                       disabled={status.submitting}
                       className="w-full py-6 bg-white text-black text-[10px] font-bold uppercase tracking-[0.4em] rounded-full disabled:opacity-20 transition-all shadow-2xl"
                     >
-                      {status.submitting ? 'Authenticating...' : 'Submit Request'}
+                      {status.submitting ? 'Sending...' : 'Send Message'}
                     </motion.button>
                   </form>
                 )}

@@ -7,14 +7,14 @@ const Footer = () => {
   const links = {
     navigation: [
       { name: 'Home', path: '/' },
-      { name: 'Portfolio', path: '/properties' },
-      { name: 'Capabilities', path: '/services' },
-      { name: 'Heritage', path: '/about' },
+      { name: 'Properties', path: '/properties' },
+      { name: 'Services', path: '/services' },
+      { name: 'About', path: '/about' },
       { name: 'Contact', path: '/contact' },
     ],
     contact: [
-      { name: 'WhatsApp', detail: 'Private Enquiry', href: `https://wa.me/${siteConfig.whatsappNumber}` },
-      { name: 'Advisory', detail: siteConfig.phone, href: `tel:${siteConfig.phone}` },
+      { name: 'WhatsApp', detail: 'Chat with us', href: `https://wa.me/${siteConfig.whatsappNumber}` },
+      { name: 'Call', detail: siteConfig.phone, href: `tel:${siteConfig.phone}` },
       { name: 'Email', detail: siteConfig.email, href: `mailto:${siteConfig.email}` },
     ]
   }
@@ -37,13 +37,13 @@ const Footer = () => {
               </p>
             </Link>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-xs italic">
-              "{siteConfig.tagline}"
+              {siteConfig.tagline}
             </p>
           </div>
 
           {/* Navigation Column */}
           <div className="md:col-span-2">
-            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">The Firm</h4>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Quick Links</h4>
             <ul className="space-y-4">
               {links.navigation.map((link) => (
                 <li key={link.path}>
@@ -57,7 +57,7 @@ const Footer = () => {
 
           {/* Contact Column */}
           <div className="md:col-span-3">
-            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Mandates</h4>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Contact</h4>
             <ul className="space-y-4">
               {links.contact.map((item) => (
                 <li key={item.name} className="flex flex-col">
@@ -72,7 +72,7 @@ const Footer = () => {
 
           {/* Social & Geographic Note */}
           <div className="md:col-span-3 md:text-right flex flex-col md:items-end">
-            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Network</h4>
+            <h4 className="text-[10px] tracking-[0.3em] uppercase text-white/20 mb-8 font-bold">Connect</h4>
             <div className="flex space-x-6">
               {Object.keys(siteConfig.social).map((platform) => (
                 <a 
@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
             <div className="mt-12 md:mt-auto">
               <span className="text-[9px] tracking-[0.4em] uppercase text-white/10 italic">
-                London &bull; Home Counties &bull; International
+                Awka &bull; Anambra State &bull; Nigeria
               </span>
             </div>
           </div>
@@ -104,7 +104,7 @@ const Footer = () => {
               &copy; {currentYear} {siteConfig.companyName}. All rights reserved.
             </p>
             <p className="text-[8px] tracking-[0.1em] text-white/10 uppercase">
-              NAFF Properties is a trading name of NAFF Advisory Ltd. Registered in England & Wales.
+              Licensed Real Estate Agent in Anambra State, Nigeria.
             </p>
           </div>
           <div className="flex gap-8">
